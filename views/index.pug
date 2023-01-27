@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Using Plain HTML in Pug</title> -->
+  <title>#{title}</title>
+  style
+       include ../static/style.css
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/">ABOUT</a></li>
+            <li><a href="/">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Get This Health Checkup at 60$-Book Your Slot now</h2>
+        <!-- <p>
+            |#{content} 
+            | Using Plain HTML in Pug
+        </p> -->
+        <form action="/" method="post" id="contact">
+             <input type="text" name="name" id="name" placeholder="Enter Your Name">
+             <input type="text" name="age" id="age" placeholder="Enter Your Age">
+             <input type="text" name="gender" id="gender" placeholder="Enter Your Gender">
+             <textarea name="issues" id="issues" cols="30" rows="10" placeholder="Enter Health issue"></textarea>
+             <textarea name="more" id="more" cols="30" rows="10" placeholder="Enter more about u"></textarea>
+             <button class="btn">Submit</button>
+        </form>
+        
+
+    </div>
+
+</body>
+</html>
